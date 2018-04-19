@@ -1,0 +1,14 @@
+c:\users\will\source\repos\DatabasePJ\DatabasePJ\bin\Debug\DatabasePJ.exe.config
+c:\users\will\source\repos\DatabasePJ\DatabasePJ\bin\Debug\DatabasePJ.exe
+c:\users\will\source\repos\DatabasePJ\DatabasePJ\bin\Debug\DatabasePJ.pdb
+c:\users\will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.Form1.resources
+c:\users\will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.Properties.Resources.resources
+c:\users\will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.csproj.GenerateResource.cache
+c:\users\will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.csproj.CoreCompileInputs.cache
+c:\users\will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.exe
+c:\users\will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.pdb
+c:\users\will\source\repos\DatabasePJ\DatabasePJ\bin\Debug\MySql.Data.dll
+c:\users\will\source\repos\DatabasePJ\DatabasePJ\bin\Debug\Renci.SshNet.dll
+c:\users\will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.csprojResolveAssemblyReference.cache
+c:\users\will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.csproj.CopyComplete
+C:\Users\Will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.Func.resources
