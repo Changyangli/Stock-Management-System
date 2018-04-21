@@ -53,13 +53,13 @@ namespace DatabasePJ
         {
             string SSHHost = "plato.cs.virginia.edu";        // SSH address
             int SSHPort = 22;              // SSH port
-            string SSHUser = "(yourinput)";           // SSH username
-            string SSHPassword = "(yourinput)";           // SSH password
+            string SSHUser = "(Your input)";           // SSH username
+            string SSHPassword = "(Your input)";           // SSH password
 
             string sqlIPA = "127.0.0.1";// 
             string sqlHost = "127.0.0.1"; // 
             uint sqlport = 3306;        // 
-            string sqlConn = "Database=(yourinput);Data Source=" + sqlIPA + ";Port=" + sqlport + ";User Id=(yourinput);Password=(yourinput);CharSet=utf8";
+            string sqlConn = "Database=(Your input);Data Source=" + sqlIPA + ";Port=" + sqlport + ";User Id=(Your input);Password=(Your input);CharSet=utf8;";
 
             PasswordConnectionInfo connectionInfo = new PasswordConnectionInfo(SSHHost, SSHPort, SSHUser, SSHPassword);
             connectionInfo.Timeout = TimeSpan.FromSeconds(30);
@@ -100,9 +100,9 @@ namespace DatabasePJ
 
         private void Login()
         {
-            string sqlCmd = "select * from account where username = '" + usernameinput.Text + "' and passwd = '" + passwdinput.Text + "'";
+            string cmd = "select * from account where username = '" + usernameinput.Text + "' and passwd = '" + passwdinput.Text + "'";
             MySqlDataAdapter myDataAdapter = new MySqlDataAdapter();
-            myDataAdapter.SelectCommand = new MySqlCommand(sqlCmd, conn);
+            myDataAdapter.SelectCommand = new MySqlCommand(cmd, conn);
 
             try
             {

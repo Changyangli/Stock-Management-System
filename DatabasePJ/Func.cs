@@ -54,7 +54,7 @@ namespace DatabasePJ
                     if (auz == 1) role.Text = "Super administrator";
                     else if (auz == 2) role.Text = "Administrator";
                     else if (auz == 3) role.Text = "Reader";
-                    if (auz > 1)
+                    if (auz == 3)
                     {
                         accountManage.Enabled = false;
                         sqlMode.Enabled = false;
@@ -69,6 +69,18 @@ namespace DatabasePJ
             {
                 reader.Close();
             }
+        }
+
+        private void accountManage_Click(object sender, EventArgs e)
+        {
+            AccountManagement AccountManagementForm = new AccountManagement(client, conn, auz);
+            AccountManagementForm.ShowDialog();
+        }
+
+        private void sqlMode_Click(object sender, EventArgs e)
+        {
+            SQLMode SQLModeForm = new SQLMode(client, conn, auz);
+            SQLModeForm.ShowDialog();
         }
     }
 }

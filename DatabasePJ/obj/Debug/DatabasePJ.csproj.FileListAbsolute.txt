@@ -12,3 +12,6 @@ c:\users\will\source\repos\DatabasePJ\DatabasePJ\bin\Debug\Renci.SshNet.dll
 c:\users\will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.csprojResolveAssemblyReference.cache
 c:\users\will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.csproj.CopyComplete
 C:\Users\Will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.Func.resources
+C:\Users\Will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.AccountManagement.resources
+C:\Users\Will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.SQLMode.resources
+C:\Users\Will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.SQLResultForm.resources

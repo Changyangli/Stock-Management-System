@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.welcome = new System.Windows.Forms.Label();
             this.auzInfo = new System.Windows.Forms.Label();
             this.role = new System.Windows.Forms.Label();
@@ -41,19 +40,9 @@
             this.sellerManage = new System.Windows.Forms.Button();
             this.suppsManage = new System.Windows.Forms.Button();
             this.sqlMode = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = global::DatabasePJ.Properties.Resources.head;
-            this.pictureBox1.Location = new System.Drawing.Point(79, 169);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(246, 240);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // welcome
             // 
@@ -95,6 +84,7 @@
             this.accountManage.TabIndex = 4;
             this.accountManage.Text = "Account";
             this.accountManage.UseVisualStyleBackColor = true;
+            this.accountManage.Click += new System.EventHandler(this.accountManage_Click);
             // 
             // categoryManage
             // 
@@ -175,6 +165,18 @@
             this.sqlMode.TabIndex = 12;
             this.sqlMode.Text = "SQL Mode (Advanced)";
             this.sqlMode.UseVisualStyleBackColor = true;
+            this.sqlMode.Click += new System.EventHandler(this.sqlMode_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = global::DatabasePJ.Properties.Resources.head;
+            this.pictureBox1.Location = new System.Drawing.Point(79, 169);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(246, 240);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Func
             // 
