@@ -30,7 +30,7 @@ namespace DatabasePJ
 
         private void AccountManagement_Load(object sender, EventArgs e)
         {
-            auzList.SelectedIndex = 2;
+            auzList.SelectedIndex = 3;
             if (auz == 2)
             {
                 addButton.Enabled = false;
@@ -96,23 +96,30 @@ namespace DatabasePJ
             if (usernameInput.Text != "") conditions.Add("username = '" + usernameInput.Text + "'");
             if (passwdInput.Text != "") conditions.Add("passwd = '" + passwdInput.Text + "'");
             if (nameInput.Text != "") conditions.Add("name = '" + nameInput.Text + "'");
-            conditions.Add("authorization = " + GetAuz());
+            if (auzList.SelectedIndex < 3) conditions.Add("authorization = " + GetAuz());
 
-            string tmpConditionsInfo = "";
-            for (int i = 0; i < conditions.Count; i++)
+            if (conditions.Count == 0)
             {
-                tmpConditionsInfo += conditions[i];
-                if (i < conditions.Count - 1)
-                    tmpConditionsInfo += ", ";
+                ShowAllRecords();
             }
-            conditionsInfo.Text = tmpConditionsInfo;
-
-            defaultCmd = "select * from account where ";
-            for (int i = 0; i < conditions.Count; i++)
+            else
             {
-                defaultCmd += conditions[i];
-                if (i < conditions.Count - 1)
-                    defaultCmd += " and ";
+                string tmpConditionsInfo = "";
+                for (int i = 0; i < conditions.Count; i++)
+                {
+                    tmpConditionsInfo += conditions[i];
+                    if (i < conditions.Count - 1)
+                        tmpConditionsInfo += ", ";
+                }
+                conditionsInfo.Text = tmpConditionsInfo;
+
+                defaultCmd = "select * from account where ";
+                for (int i = 0; i < conditions.Count; i++)
+                {
+                    defaultCmd += conditions[i];
+                    if (i < conditions.Count - 1)
+                        defaultCmd += " and ";
+                }
             }
             FillDataGridView();
         }
@@ -144,6 +151,11 @@ namespace DatabasePJ
                 MessageBox.Show("Please select only one row for update.", "Update failed", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
         }
 
+        private void showAllBbutton_Click(object sender, EventArgs e)
+        {
+            ShowAllRecords();
+        }
+
         private void accountGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int row = accountGridView.CurrentRow.Index;
@@ -152,9 +164,7 @@ namespace DatabasePJ
             passwdInput.Text = accountGridView.Rows[row].Cells["passwd"].Value.ToString();
             nameInput.Text = accountGridView.Rows[row].Cells["name"].Value.ToString();
             int thisAuz = int.Parse(accountGridView.Rows[row].Cells["authorization"].Value.ToString());
-            if (thisAuz == 1) auzList.SelectedIndex = 0;
-            else if (thisAuz == 2) auzList.SelectedIndex = 1;
-            else if (thisAuz == 3) auzList.SelectedIndex = 2;
+            auzList.SelectedIndex = thisAuz - 1;
         }
 
         private void FillDataGridView()

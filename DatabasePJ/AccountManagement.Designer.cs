@@ -43,6 +43,7 @@
             this.conditionsInfo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.searchButton = new System.Windows.Forms.Button();
+            this.showAllBbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.accountGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -159,7 +160,8 @@
             this.auzList.Items.AddRange(new object[] {
             "Super administrator",
             "Administrator",
-            "Reader"});
+            "Reader",
+            "N/A"});
             this.auzList.Location = new System.Drawing.Point(831, 406);
             this.auzList.Name = "auzList";
             this.auzList.Size = new System.Drawing.Size(250, 28);
@@ -208,11 +210,23 @@
             this.searchButton.UseVisualStyleBackColor = true;
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
+            // showAllBbutton
+            // 
+            this.showAllBbutton.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showAllBbutton.Location = new System.Drawing.Point(701, 9);
+            this.showAllBbutton.Name = "showAllBbutton";
+            this.showAllBbutton.Size = new System.Drawing.Size(108, 32);
+            this.showAllBbutton.TabIndex = 16;
+            this.showAllBbutton.Text = "Show all";
+            this.showAllBbutton.UseVisualStyleBackColor = true;
+            this.showAllBbutton.Click += new System.EventHandler(this.showAllBbutton_Click);
+            // 
             // AccountManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1098, 606);
+            this.Controls.Add(this.showAllBbutton);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.conditionsInfo);
             this.Controls.Add(this.label1);
@@ -254,5 +268,6 @@
         private System.Windows.Forms.Label conditionsInfo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.Button showAllBbutton;
     }
 }
