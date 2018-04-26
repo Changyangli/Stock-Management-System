@@ -82,5 +82,47 @@ namespace DatabasePJ
             SQLMode SQLModeForm = new SQLMode(client, conn, auz);
             SQLModeForm.ShowDialog();
         }
+
+        private void categoryManage_Click(object sender, EventArgs e)
+        {
+            Category CategoryForm = new Category(client, conn, auz);
+            CategoryForm.ShowDialog();
+        }
+
+        private void itemManage_Click(object sender, EventArgs e)
+        {
+            itemForm newItemForm = new itemForm(client, conn, auz);
+            newItemForm.ShowDialog();
+        }
+
+        private void productManage_Click(object sender, EventArgs e)
+        {
+            productForm newProductForm = new productForm(client, conn, auz);
+            newProductForm.ShowDialog();
+        }
+
+        private void sellerManage_Click(object sender, EventArgs e)
+        {
+            Seller sellerForm = new Seller(client, conn, auz);
+            sellerForm.ShowDialog();
+        }
+
+        private void reviewManage_Click(object sender, EventArgs e)
+        {
+            Review reviewForm = new Review(client, conn, auz);
+            reviewForm.ShowDialog();
+        }
+
+        private void sellingsManage_Click(object sender, EventArgs e)
+        {
+            selling_history sellingHistoryForm = new selling_history(client, conn, auz);
+            sellingHistoryForm.ShowDialog();
+        }
+
+        private void suppsManage_Click(object sender, EventArgs e)
+        {
+            supplement_history supplementHistoryForm = new supplement_history(client, conn, auz);
+            supplementHistoryForm.ShowDialog();
+        }
     }
 }

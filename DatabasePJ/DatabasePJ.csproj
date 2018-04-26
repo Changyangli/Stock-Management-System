@@ -59,11 +59,23 @@
     <Compile Include="AccountManagement.Designer.cs">
       <DependentUpon>AccountManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category.Designer.cs">
+      <DependentUpon>Category.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selling_history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selling_history.Designer.cs">
+      <DependentUpon>selling_history.cs</DependentUpon>
     </Compile>
     <Compile Include="Func.cs">
       <SubType>Form</SubType>
@@ -71,8 +83,32 @@
     <Compile Include="Func.Designer.cs">
       <DependentUpon>Func.cs</DependentUpon>
     </Compile>
+    <Compile Include="itemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="itemForm.Designer.cs">
+      <DependentUpon>itemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productForm.Designer.cs">
+      <DependentUpon>productForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Review.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Review.Designer.cs">
+      <DependentUpon>Review.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seller.Designer.cs">
+      <DependentUpon>Seller.cs</DependentUpon>
+    </Compile>
     <Compile Include="SQLMode.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,14 +121,32 @@
     <Compile Include="SQLResultForm.Designer.cs">
       <DependentUpon>SQLResultForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="supplement_history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="supplement_history.Designer.cs">
+      <DependentUpon>supplement_history.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AccountManagement.resx">
       <DependentUpon>AccountManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category.resx">
+      <DependentUpon>Category.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="selling_history.resx">
+      <DependentUpon>selling_history.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Func.resx">
       <DependentUpon>Func.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="itemForm.resx">
+      <DependentUpon>itemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productForm.resx">
+      <DependentUpon>productForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -104,11 +158,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Review.resx">
+      <DependentUpon>Review.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seller.resx">
+      <DependentUpon>Seller.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SQLMode.resx">
       <DependentUpon>SQLMode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SQLResultForm.resx">
       <DependentUpon>SQLResultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supplement_history.resx">
+      <DependentUpon>supplement_history.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

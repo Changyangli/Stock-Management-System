@@ -9,9 +9,16 @@ c:\users\will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.exe
 c:\users\will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.pdb
 c:\users\will\source\repos\DatabasePJ\DatabasePJ\bin\Debug\MySql.Data.dll
 c:\users\will\source\repos\DatabasePJ\DatabasePJ\bin\Debug\Renci.SshNet.dll
-c:\users\will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.csprojResolveAssemblyReference.cache
 c:\users\will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.csproj.CopyComplete
 C:\Users\Will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.Func.resources
 C:\Users\Will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.AccountManagement.resources
 C:\Users\Will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.SQLMode.resources
 C:\Users\Will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.SQLResultForm.resources
+C:\Users\Will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.Category.resources
+C:\Users\Will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.ItemForm.resources
+C:\Users\Will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.ProductForm.resources
+C:\Users\Will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.csprojResolveAssemblyReference.cache
+C:\Users\Will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.Review.resources
+C:\Users\Will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.Seller.resources
+C:\Users\Will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.selling_history.resources
+C:\Users\Will\source\repos\DatabasePJ\DatabasePJ\obj\Debug\DatabasePJ.supplement_history.resources

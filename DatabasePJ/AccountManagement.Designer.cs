@@ -53,10 +53,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.accountGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.accountGridView.Location = new System.Drawing.Point(12, 87);
+            this.accountGridView.Location = new System.Drawing.Point(8, 57);
+            this.accountGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.accountGridView.Name = "accountGridView";
             this.accountGridView.RowTemplate.Height = 28;
-            this.accountGridView.Size = new System.Drawing.Size(799, 507);
+            this.accountGridView.Size = new System.Drawing.Size(533, 330);
             this.accountGridView.TabIndex = 0;
             this.accountGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.accountGridView_CellClick);
             // 
@@ -64,9 +65,10 @@
             // 
             this.addButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.addButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addButton.Location = new System.Drawing.Point(831, 488);
+            this.addButton.Location = new System.Drawing.Point(554, 317);
+            this.addButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(110, 49);
+            this.addButton.Size = new System.Drawing.Size(73, 32);
             this.addButton.TabIndex = 1;
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = true;
@@ -76,9 +78,10 @@
             // 
             this.deleteButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.deleteButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteButton.Location = new System.Drawing.Point(833, 543);
+            this.deleteButton.Location = new System.Drawing.Point(555, 353);
+            this.deleteButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(108, 49);
+            this.deleteButton.Size = new System.Drawing.Size(72, 32);
             this.deleteButton.TabIndex = 2;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = true;
@@ -87,9 +90,10 @@
             // usernameInput
             // 
             this.usernameInput.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.usernameInput.Location = new System.Drawing.Point(831, 124);
+            this.usernameInput.Location = new System.Drawing.Point(554, 81);
+            this.usernameInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.usernameInput.Name = "usernameInput";
-            this.usernameInput.Size = new System.Drawing.Size(250, 26);
+            this.usernameInput.Size = new System.Drawing.Size(168, 20);
             this.usernameInput.TabIndex = 3;
             // 
             // usernameLabel
@@ -97,9 +101,10 @@
             this.usernameLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.usernameLabel.AutoSize = true;
             this.usernameLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameLabel.Location = new System.Drawing.Point(828, 86);
+            this.usernameLabel.Location = new System.Drawing.Point(552, 56);
+            this.usernameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(113, 29);
+            this.usernameLabel.Size = new System.Drawing.Size(75, 19);
             this.usernameLabel.TabIndex = 5;
             this.usernameLabel.Text = "Username";
             // 
@@ -108,18 +113,20 @@
             this.passwdLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.passwdLabel.AutoSize = true;
             this.passwdLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwdLabel.Location = new System.Drawing.Point(828, 176);
+            this.passwdLabel.Location = new System.Drawing.Point(552, 114);
+            this.passwdLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.passwdLabel.Name = "passwdLabel";
-            this.passwdLabel.Size = new System.Drawing.Size(105, 29);
+            this.passwdLabel.Size = new System.Drawing.Size(71, 19);
             this.passwdLabel.TabIndex = 7;
             this.passwdLabel.Text = "Password";
             // 
             // passwdInput
             // 
             this.passwdInput.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.passwdInput.Location = new System.Drawing.Point(831, 214);
+            this.passwdInput.Location = new System.Drawing.Point(554, 139);
+            this.passwdInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.passwdInput.Name = "passwdInput";
-            this.passwdInput.Size = new System.Drawing.Size(250, 26);
+            this.passwdInput.Size = new System.Drawing.Size(168, 20);
             this.passwdInput.TabIndex = 6;
             // 
             // nameLable
@@ -127,18 +134,20 @@
             this.nameLable.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.nameLable.AutoSize = true;
             this.nameLable.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameLable.Location = new System.Drawing.Point(828, 267);
+            this.nameLable.Location = new System.Drawing.Point(552, 174);
+            this.nameLable.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nameLable.Name = "nameLable";
-            this.nameLable.Size = new System.Drawing.Size(72, 29);
+            this.nameLable.Size = new System.Drawing.Size(47, 19);
             this.nameLable.TabIndex = 9;
             this.nameLable.Text = "Name";
             // 
             // nameInput
             // 
             this.nameInput.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.nameInput.Location = new System.Drawing.Point(831, 305);
+            this.nameInput.Location = new System.Drawing.Point(554, 198);
+            this.nameInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nameInput.Name = "nameInput";
-            this.nameInput.Size = new System.Drawing.Size(250, 26);
+            this.nameInput.Size = new System.Drawing.Size(168, 20);
             this.nameInput.TabIndex = 8;
             // 
             // auzLabel
@@ -146,9 +155,10 @@
             this.auzLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.auzLabel.AutoSize = true;
             this.auzLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.auzLabel.Location = new System.Drawing.Point(828, 365);
+            this.auzLabel.Location = new System.Drawing.Point(552, 237);
+            this.auzLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.auzLabel.Name = "auzLabel";
-            this.auzLabel.Size = new System.Drawing.Size(148, 29);
+            this.auzLabel.Size = new System.Drawing.Size(95, 19);
             this.auzLabel.TabIndex = 10;
             this.auzLabel.Text = "Authorization";
             // 
@@ -162,18 +172,20 @@
             "Administrator",
             "Reader",
             "N/A"});
-            this.auzList.Location = new System.Drawing.Point(831, 406);
+            this.auzList.Location = new System.Drawing.Point(554, 264);
+            this.auzList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.auzList.Name = "auzList";
-            this.auzList.Size = new System.Drawing.Size(250, 28);
+            this.auzList.Size = new System.Drawing.Size(168, 21);
             this.auzList.TabIndex = 11;
             // 
             // updateButton
             // 
             this.updateButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.updateButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateButton.Location = new System.Drawing.Point(957, 543);
+            this.updateButton.Location = new System.Drawing.Point(638, 353);
+            this.updateButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(124, 49);
+            this.updateButton.Size = new System.Drawing.Size(83, 32);
             this.updateButton.TabIndex = 12;
             this.updateButton.Text = "Update";
             this.updateButton.UseVisualStyleBackColor = true;
@@ -183,18 +195,20 @@
             // 
             this.conditionsInfo.AutoSize = true;
             this.conditionsInfo.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.conditionsInfo.Location = new System.Drawing.Point(12, 48);
+            this.conditionsInfo.Location = new System.Drawing.Point(8, 31);
+            this.conditionsInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.conditionsInfo.Name = "conditionsInfo";
-            this.conditionsInfo.Size = new System.Drawing.Size(0, 28);
+            this.conditionsInfo.Size = new System.Drawing.Size(0, 19);
             this.conditionsInfo.TabIndex = 14;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(8, 6);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(247, 24);
+            this.label1.Size = new System.Drawing.Size(165, 17);
             this.label1.TabIndex = 13;
             this.label1.Text = "Querry results of conditions:";
             // 
@@ -202,9 +216,10 @@
             // 
             this.searchButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.searchButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchButton.Location = new System.Drawing.Point(957, 488);
+            this.searchButton.Location = new System.Drawing.Point(638, 317);
+            this.searchButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(124, 49);
+            this.searchButton.Size = new System.Drawing.Size(83, 32);
             this.searchButton.TabIndex = 15;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
@@ -213,9 +228,10 @@
             // showAllBbutton
             // 
             this.showAllBbutton.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showAllBbutton.Location = new System.Drawing.Point(701, 9);
+            this.showAllBbutton.Location = new System.Drawing.Point(467, 6);
+            this.showAllBbutton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.showAllBbutton.Name = "showAllBbutton";
-            this.showAllBbutton.Size = new System.Drawing.Size(108, 32);
+            this.showAllBbutton.Size = new System.Drawing.Size(72, 24);
             this.showAllBbutton.TabIndex = 16;
             this.showAllBbutton.Text = "Show all";
             this.showAllBbutton.UseVisualStyleBackColor = true;
@@ -223,9 +239,9 @@
             // 
             // AccountManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1098, 606);
+            this.ClientSize = new System.Drawing.Size(732, 394);
             this.Controls.Add(this.showAllBbutton);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.conditionsInfo);
@@ -242,6 +258,7 @@
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.accountGridView);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AccountManagement";
             this.Text = "AccountManagement";
             this.Load += new System.EventHandler(this.AccountManagement_Load);

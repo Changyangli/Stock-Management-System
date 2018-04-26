@@ -35,20 +35,25 @@ namespace DatabasePJ
             string cmdInput = commands.Text;
             if (cmdInput == "") return;
             string[] cmds;
-            cmdInput = cmdInput.Replace("\r\n", "\n");
-            cmds = cmdInput.Split('\n');
+            cmdInput = cmdInput.Replace("\r\n", " ");
+            cmdInput = cmdInput.Replace("\n", " ");
+            cmds = cmdInput.Split(';');
             foreach (string singleCmd in cmds)
             {
-                if (singleCmd.Substring(0, 6) == "select")
+                int spaceCnt = 0;
+                while (spaceCnt < singleCmd.Length && singleCmd[spaceCnt] == ' ') spaceCnt++;
+                string handledCmd = singleCmd.Remove(0, spaceCnt);
+                if (handledCmd == "") continue;
+                if (handledCmd.Substring(0, 6) == "select")
                 {
                     Thread newQuerry = new Thread(new ParameterizedThreadStart(NewSelectWindow));
                     newQuerry.IsBackground = true;
-                    newQuerry.Start(singleCmd);
-                    Thread.Sleep(50);
+                    newQuerry.Start(handledCmd);
+                    Thread.Sleep(100);
                 }
                 else
                 {
-                    if (singleCmd.Contains(" account "))
+                    if (handledCmd.Contains(" account "))
                     {
                         if (auz == 2)
                         {
@@ -57,7 +62,7 @@ namespace DatabasePJ
                         }
                     }
 
-                    MySqlCommand mysqlCmd = new MySqlCommand(singleCmd, conn);
+                    MySqlCommand mysqlCmd = new MySqlCommand(handledCmd, conn);
 
                     try
                     {

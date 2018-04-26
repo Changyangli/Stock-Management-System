@@ -58,7 +58,7 @@
             // 
             this.auzInfo.AutoSize = true;
             this.auzInfo.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.auzInfo.Location = new System.Drawing.Point(81, 96);
+            this.auzInfo.Location = new System.Drawing.Point(81, 95);
             this.auzInfo.Name = "auzInfo";
             this.auzInfo.Size = new System.Drawing.Size(176, 39);
             this.auzInfo.TabIndex = 2;
@@ -69,7 +69,7 @@
             this.role.AutoSize = true;
             this.role.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.role.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.role.Location = new System.Drawing.Point(249, 96);
+            this.role.Location = new System.Drawing.Point(249, 95);
             this.role.Name = "role";
             this.role.Size = new System.Drawing.Size(67, 39);
             this.role.TabIndex = 3;
@@ -78,7 +78,7 @@
             // accountManage
             // 
             this.accountManage.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accountManage.Location = new System.Drawing.Point(379, 164);
+            this.accountManage.Location = new System.Drawing.Point(380, 165);
             this.accountManage.Name = "accountManage";
             this.accountManage.Size = new System.Drawing.Size(122, 40);
             this.accountManage.TabIndex = 4;
@@ -89,42 +89,46 @@
             // categoryManage
             // 
             this.categoryManage.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.categoryManage.Location = new System.Drawing.Point(519, 164);
+            this.categoryManage.Location = new System.Drawing.Point(519, 165);
             this.categoryManage.Name = "categoryManage";
             this.categoryManage.Size = new System.Drawing.Size(122, 40);
             this.categoryManage.TabIndex = 5;
             this.categoryManage.Text = "Category";
             this.categoryManage.UseVisualStyleBackColor = true;
+            this.categoryManage.Click += new System.EventHandler(this.categoryManage_Click);
             // 
             // productManage
             // 
             this.productManage.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productManage.Location = new System.Drawing.Point(519, 210);
+            this.productManage.Location = new System.Drawing.Point(519, 209);
             this.productManage.Name = "productManage";
             this.productManage.Size = new System.Drawing.Size(122, 40);
             this.productManage.TabIndex = 7;
             this.productManage.Text = "Product";
             this.productManage.UseVisualStyleBackColor = true;
+            this.productManage.Click += new System.EventHandler(this.productManage_Click);
             // 
             // itemManage
             // 
             this.itemManage.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemManage.Location = new System.Drawing.Point(379, 210);
+            this.itemManage.Location = new System.Drawing.Point(380, 209);
             this.itemManage.Name = "itemManage";
             this.itemManage.Size = new System.Drawing.Size(122, 40);
             this.itemManage.TabIndex = 6;
             this.itemManage.Text = "Item";
             this.itemManage.UseVisualStyleBackColor = true;
+            this.itemManage.Click += new System.EventHandler(this.itemManage_Click);
             // 
             // sellingsManage
             // 
             this.sellingsManage.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sellingsManage.Location = new System.Drawing.Point(379, 300);
+            this.sellingsManage.Location = new System.Drawing.Point(380, 300);
             this.sellingsManage.Name = "sellingsManage";
-            this.sellingsManage.Size = new System.Drawing.Size(122, 59);
+            this.sellingsManage.Size = new System.Drawing.Size(122, 58);
             this.sellingsManage.TabIndex = 10;
             this.sellingsManage.Text = "Selling History";
             this.sellingsManage.UseVisualStyleBackColor = true;
+            this.sellingsManage.Click += new System.EventHandler(this.sellingsManage_Click);
             // 
             // reviewManage
             // 
@@ -135,31 +139,34 @@
             this.reviewManage.TabIndex = 9;
             this.reviewManage.Text = "Review";
             this.reviewManage.UseVisualStyleBackColor = true;
+            this.reviewManage.Click += new System.EventHandler(this.reviewManage_Click);
             // 
             // sellerManage
             // 
             this.sellerManage.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sellerManage.Location = new System.Drawing.Point(379, 255);
+            this.sellerManage.Location = new System.Drawing.Point(380, 255);
             this.sellerManage.Name = "sellerManage";
             this.sellerManage.Size = new System.Drawing.Size(122, 40);
             this.sellerManage.TabIndex = 8;
             this.sellerManage.Text = "Seller";
             this.sellerManage.UseVisualStyleBackColor = true;
+            this.sellerManage.Click += new System.EventHandler(this.sellerManage_Click);
             // 
             // suppsManage
             // 
             this.suppsManage.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.suppsManage.Location = new System.Drawing.Point(519, 300);
             this.suppsManage.Name = "suppsManage";
-            this.suppsManage.Size = new System.Drawing.Size(122, 59);
+            this.suppsManage.Size = new System.Drawing.Size(122, 58);
             this.suppsManage.TabIndex = 11;
             this.suppsManage.Text = "Supplement History";
             this.suppsManage.UseVisualStyleBackColor = true;
+            this.suppsManage.Click += new System.EventHandler(this.suppsManage_Click);
             // 
             // sqlMode
             // 
             this.sqlMode.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sqlMode.Location = new System.Drawing.Point(379, 374);
+            this.sqlMode.Location = new System.Drawing.Point(380, 374);
             this.sqlMode.Name = "sqlMode";
             this.sqlMode.Size = new System.Drawing.Size(262, 40);
             this.sqlMode.TabIndex = 12;
@@ -171,7 +178,7 @@
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::DatabasePJ.Properties.Resources.head;
-            this.pictureBox1.Location = new System.Drawing.Point(79, 169);
+            this.pictureBox1.Location = new System.Drawing.Point(80, 169);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(246, 240);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -182,7 +189,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(725, 460);
+            this.ClientSize = new System.Drawing.Size(724, 460);
             this.Controls.Add(this.sqlMode);
             this.Controls.Add(this.suppsManage);
             this.Controls.Add(this.sellingsManage);
