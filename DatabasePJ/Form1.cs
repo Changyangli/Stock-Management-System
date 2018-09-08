@@ -53,13 +53,13 @@ namespace DatabasePJ
         {
             string SSHHost = "plato.cs.virginia.edu";        // SSH address
             int SSHPort = 22;              // SSH port
-            string SSHUser = "(Your Input)";           // SSH username
-            string SSHPassword = "(Your Input)";           // SSH password
+            string SSHUser = "TBS";           // SSH username
+            string SSHPassword = "TBS";           // SSH password
 
             string sqlIPA = "127.0.0.1";// 
             string sqlHost = "127.0.0.1"; // 
             uint sqlport = 3306;        // 
-            string sqlConn = "Database=(Your Input);Data Source=" + sqlIPA + ";Port=" + sqlport + ";User Id=(Your Input);Password=(Your Input);CharSet=utf8;";
+            string sqlConn = "Database=TBS;Data Source=" + sqlIPA + ";Port=" + sqlport + ";User Id=TBS;Password=TBS;CharSet=utf8;";
 
             PasswordConnectionInfo connectionInfo = new PasswordConnectionInfo(SSHHost, SSHPort, SSHUser, SSHPassword);
             connectionInfo.Timeout = TimeSpan.FromSeconds(30);
